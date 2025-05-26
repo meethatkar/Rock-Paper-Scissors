@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1> Rock Paper Scissors </h1>
+        <div id="images">
+            <div class="choice"> 
+                <img src="images/rock.png" alt="Rock Symbol" class="choices" id="rock">
+                <p> Rock </p>
+            </div>
+            <div class="choice">
+                <img src="images/paper.png" alt="Paper symbol" class="choices" id="paper">
+                <p> Paper </p>
+            </div>
+            <div class="choice"> 
+                <img src="images/scissors.png" alt="Scissors symbol" class="choices" id="scissor">
+                <p> Scissor </p>
+            </div>
+        </div>
+        <table id="selection">
+            <tr id="you" class="selected">
+                <td style="text-decoration: underline;"> You Selected: </td>
+                <td id="userSelection"> Null </td>
+            </tr>
+            <tr id="computer" class="selected">
+                <td style="text-decoration: underline;"> Computer Selected: </td>
+                <td id="computerSelection"> Null </td>
+            </tr>
+        </table>
+        <div id="scores">
+            <div>
+                <p id="yourScore"> 0 </p>
+                <p> You </p>
+            </div>
+            <div>
+                <p id="computerScore"> 0 </p>
+                <p> Computer </p>
+            </div>
+        </div>
+        <div id="result">
+            <p> Select/click on any symbol to play Game. </p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
