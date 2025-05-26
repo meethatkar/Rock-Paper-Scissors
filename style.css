@@ -86,14 +86,16 @@ main>h1{
     gap: 3vw;
     font-size: 1.5vw;
     text-align: center;
+    margin-bottom: 5%;
 }
 #result{
-    margin: 5% 0%;
+    /* margin: 5% 0%; */
     padding: 1% 2%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color:#A7DC8E;
     border-radius: 10px;
     font-size: 1.5vw;
+    font-weight: 700;
 }
