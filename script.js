@@ -1,4 +1,5 @@
 let userScore = 0;
+
 let computerScore = 0;
 var choices = document.querySelectorAll(".choices");
 var resultDiv = document.querySelector("#result>p");
@@ -18,11 +19,14 @@ function playGame(UserChoice){
     userSelectionDiv.innerText = UserChoice;
     computerSelectionDiv.innerText = compRes;
     if(compRes === UserChoice){
+        resultDiv.innerText = `Draw, you both choose ${UserChoice}`;
+    }
+    else if(compRes==="rock" && UserChoice==="paper" || compRes==="paper" && UserChoice==="scissor" || compRes==="scissor" && UserChoice==="rock"){
         resultDiv.innerText = "You Won !!!";
         userScore++;
         userScoreDiv.innerText = userScore;
     }
-    else{
+    else if(UserChoice==="rock" && compRes==="paper" || UserChoice==="paper" && compRes==="scissor" || UserChoice==="scissor" && compRes==="rock"){
         resultDiv.innerText = "Computer Won !!!";
         computerScore++;
         computerScoreDiv.innerText = computerScore;
