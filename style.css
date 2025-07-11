@@ -20,11 +20,10 @@ main{
 }
 main>h1{
     width: 100%;
-    height: 8vh;
-    font-size: 2vw;
+    font-size: 2vmax;
     background-color: black;
     color: whitesmoke;
-    padding: 1% 0%;
+    padding: 2vmin 0vw;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0 0 4px whitesmoke;
@@ -38,8 +37,8 @@ main>h1{
     margin: 4% 0%;
 }
 .choice{
-    height: 22vh;
-    width: 10vw;
+    /* height: 22vmin; */
+    width: 10vmax;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,31 +46,32 @@ main>h1{
     gap: 5%;
 }
 .choice>p{
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
     font-weight: 700;
     color: darkslategrey;
 }
 #images img{
-    height: 15vh;
-    width: 8vw;
+    height: 15vmin;
+    width: 8vmax;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid transparent;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.142);
+    margin-bottom: 10%;
 }
 #images img:hover{
     border: 5px solid black;
 }
 #selection{
-    min-height: 10vh;
-    width: 25vw;
+    min-height: 10vmin;
+    width: 25vmax;
     /* background-color: ; */
     border: 2px solid black;
     margin-bottom: 3%;
     border-radius: 10px;
 }
 #selection td{
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
     font-weight: 500;
     margin: 0% 3%;
 }
@@ -83,8 +83,8 @@ main>h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3vw;
-    font-size: 1.5vw;
+    gap: 3vmax;
+    font-size: 1.5vmax;
     text-align: center;
     margin-bottom: 5%;
 }
@@ -96,6 +96,45 @@ main>h1{
     justify-content: center;
     background-color:#A7DC8E;
     border-radius: 10px;
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
     font-weight: 700;
+}
+
+@media (max-width:600px) {
+
+    main>h1{
+        padding: 5% 0%;
+        font-size: 3.5vmax;
+    }
+
+    #images{
+        width: 90%;
+        margin: 10% 0%;
+        gap: 5vmax;
+    }
+
+    #images img{
+        height: 25vmin;
+        width: 10vmax;
+    }
+    .choice>p{
+        font-size: 2vmax;
+    }
+
+    #selection{
+        width: 40vmax;
+    }
+    #selection td{
+        font-size: 2.5vmax;
+    }
+
+    #scores{
+        font-size: 2.5vmax;
+        margin: 5% 0%;
+    }
+
+    #result{
+        font-size: 2.2vmax;
+        margin: 5% 0%;
+    }
 }
